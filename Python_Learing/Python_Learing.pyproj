@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>92f36dfe-3d8d-4a63-9e41-b51592647ef6</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>02_process.py</StartupFile>
+    <StartupFile>function.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,6 +23,9 @@
   <ItemGroup>
     <Compile Include="01_datatypes.py" />
     <Compile Include="02_process.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="function.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
