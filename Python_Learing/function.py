@@ -21,3 +21,5 @@ def noreturn():
 
 print(type(noreturn()))
 none_v = None   # 变量亦可预定为None
+
+# 方法：定义与class类内的函数
