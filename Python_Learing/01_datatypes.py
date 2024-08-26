@@ -156,7 +156,34 @@ print(set_n2,'\n')
 
 
 # Dictionary: 无序Key-Value集合
+dict_n1 = dict()	# 声明字典	
+dict_n2 = {}		# 创建空字典
+dict_n2 = {1:'a' , '2':2 , 3.14:dict_n1 , 1:0}	# 键值与实值均可为多种数据类型，键可重复插入，字典将自动去重，
+print(dict_n2)	# 插入数据后字典将自动排序										后传入的同键值数据将覆盖前数据											
+print(dict_n2[1])	# 通过键访问指定元素的实值
+dict_n2[2] = True	# 修改字典
+dict_n2.pop('2')	# 删除字典指定元素
+dict_n2.clear()	# 清空字典
+dict_n1 = {1:'a',2:'b',3:'c',}
+keys = dict_n1.keys()	# 获取字典中所有的键值
+print(keys)
+l5_dict = len(dict_n1)	# 获取字典长度
 
-
-
-
+	# 字典的遍历
+for x in keys:
+	print(f"{x}:{dict_n1[x]}")
+for key in dict_n1:			# 直接for遍历字典为遍历键值
+	print(f"{key}:{dict_n1[key]}")
+print()   
+	
+	# 容器的常用方法
+set_n3 = {3,1,2,5,4}
+print(max(set_n3))	# 返回容器中的最大值
+print(min(set_n3))	# 返回容器中的最小值
+# 各容器间的转换：list(容器)、tuple(容器)、set(容器)、str(容器)、dict(容器)
+# list(dict)、tulpe(dict)、set(dict)将抛弃字典实值
+# str(容器)将保留括号，即容器调用print时形式
+# set(容器)时集合将自动重新排序，且将自动去重
+# dict(容器)仅可转换空容器
+print(sorted(set_n3))	# 升序排列
+print(sorted(set_n3,reverse=True))	# 降序排列
