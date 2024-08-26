@@ -122,9 +122,38 @@ tuple_list[-1][1] = 14	# 允许修改元组内嵌套的列表
 lst1 = [1,2,3,4,5,6,7,8,9,10]
 lst2 = lst1[1:-2:2]	# 切片：前两位参数为确定指定序列的一个前闭后开区间，置空不填则默认为全序列；末参数为步长，默认为1即逐一取值，可置空；
 print(lst2)					# 按步长在区间内切片后返回新序列
+print()
 
 
 # Set: 无序不重复集合
+set_n1 = set()	# 声明集合	
+set_n2 = {}		# 创建空集合 
+set_n1 = {1,1,1,"aaa",3.14,(1,2)}	# 集合允许重复元素填入,注意：集合仅允许嵌套元组
+print(set_n1)						# 但实际集合中将自动进行去重操作，且顺序将改变——>故无法使用下标访问元素
+set_n1.add('b')	# 添加元素
+print(set_n1)
+print(set_n1.pop())	# 弹出集合中首元素，注意：每次填入数据后集合均将自动重新排序，故相当于随机访问
+set_n1.clear()		# 清空集合
+set_n1 = {1,2,3}
+set_n2 = {3,4,5}
+print(set_n1.difference(set_n2))	# 返回集合一相对集合二的补集——>{1,2}
+set_n1.difference_update(set_n2)	# 集合一去除交集成为补集，集合二不做修改
+print(set_n1)	# ——>{1,2}
+print(set_n1.union(set_n2))		# 返回并集(依然去重)
+l4_set = len(set_n2)	# 返回集合长度
+
+	# 遍历集合
+for x in set_n2:
+	print(x)
+i_set = 0
+while i_set < l4_set:
+	print(set_n2.pop())	# 逐一弹出清空集合
+	i_set += 1
+print(set_n2,'\n')
+
+
+
+
 
 # Dictionary: 无序Key-Value集合
 
