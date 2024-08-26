@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>92f36dfe-3d8d-4a63-9e41-b51592647ef6</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>04_files.py</StartupFile>
+    <StartupFile>05_error.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -29,6 +29,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="03_function.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="05_error.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
