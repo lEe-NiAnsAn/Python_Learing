@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>92f36dfe-3d8d-4a63-9e41-b51592647ef6</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>01_datatypes.py</StartupFile>
+    <StartupFile>function.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
