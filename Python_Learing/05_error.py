@@ -37,4 +37,17 @@ except:		# 此处异常选择可省略，默认全异常捕获
 else:
 	print("该语句执行成功")	# 未出现异常
 finally:
-	orf.close()		# 异常处理结束语句		
+	orf.close()		# 异常处理结束语句	
+
+def func01():
+	print("func01调用")
+	print(1 / 0)	# 此函数并未捕获异常
+def func02():
+	print("func02调用")
+	func01()	# 接收异常，但此函数亦未捕获异常
+def func03():
+	try:
+		func02()	# 接收异常并捕获
+	except Exception as e:
+		print(f"异常：{e}")
+func03()	# 调用接收了传递异常的函数	
